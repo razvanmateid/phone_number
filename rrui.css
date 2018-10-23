@@ -2,8 +2,13 @@
 = Inputs                                                    =
 ===========================================================*/
 
+.rrui__input-element rrui__input-field rrui__select__autocomplete {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+}
+
 .rrui__select__button {
-    min-width: 70px
+    min-width: 90px
 }
 
 .rrui__input-field {
@@ -11,7 +16,7 @@
 }
 
 .rrui__select__button:focus, .rrui__select__native-expanded:focus + .rrui__select__button {
-    border-bottom-color: #03B2CB
+    border-bottom: 2px solid #03B2CB;
 }
 
 .react-phone-number-input__country.rrui__select--collapsed {
@@ -43,6 +48,7 @@
     /* `position: relative` is for the floating label absolute positioning
        and also for `.rrui__select__options width` sizing */
     position: relative;
+    font-family: Roboto, sans-serif;
 }
 
 .rrui__input,

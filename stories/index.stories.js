@@ -10,12 +10,13 @@ import PhoneInput from '../index';
 import TextField from 'material-ui/TextField';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
-storiesOf("Phone Component", module)
-    .add("with text", () => (
+storiesOf("MUI Phone Component", module)
+    .add("Basic", () => (
         <MuiThemeProvider>
             <PhoneInput
                 onChange={_ => console.log('change')}
                 inputComponent={TextField}
+                displayInitialValueAsLocalNumber={true}
             />
         </MuiThemeProvider>
     ));
