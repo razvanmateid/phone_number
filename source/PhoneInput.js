@@ -396,7 +396,7 @@ export default class PhoneNumberInput extends PureComponent
 	// `parsed_input` must be a parsed phone number
 	// or an empty string.
 	// E.g.: `""`, `"+"`, `"+123"`, `"123"`.
-	onChange = (parsed_input) =>
+	onChange = (e, parsed_input) =>
 	{
 		const
 		{
