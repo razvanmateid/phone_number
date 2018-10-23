@@ -1,7 +1,7 @@
-react-phone-number-input__country-prefix {
+.react-phone-number-input__country-prefix {
     position: absolute;
     left: 26px;
-    bottom: 13px;
+    bottom: 15px;
     z-index: -1;
 }
 

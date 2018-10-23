@@ -15,7 +15,7 @@
 }
 
 .react-phone-number-input__country.rrui__select--collapsed {
-    margin-top: 4px
+    height: 26px;
 }
 
 .react-phone-number-input__country.rrui__select--expanded {
