@@ -1,3 +1,10 @@
+react-phone-number-input__country-prefix {
+    position: absolute;
+    left: 26px;
+    bottom: 13px;
+    z-index: -1;
+}
+
 .react-phone-number-input__row {
     /* This is done to stretch `.rrui__select__options` */
     /* to the full width of `.react-phone-number-input__phone`. */

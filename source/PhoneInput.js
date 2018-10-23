@@ -693,6 +693,13 @@ export default class PhoneNumberInput extends PureComponent
 							className="react-phone-number-input__country"/>
 					}
 
+                    {showCountrySelect && country &&
+                    	<span
+                        	className={"react-phone-number-input__country-prefix"}>
+								+{metadata.countries[country][0]}
+                        </span>
+                    }
+
 					{/* Phone number `<input/>` */}
 					{ !hidePhoneInputField &&
 						<InputComponent
