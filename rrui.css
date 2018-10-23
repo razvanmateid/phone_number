@@ -2,6 +2,26 @@
 = Inputs                                                    =
 ===========================================================*/
 
+.rrui__select__button {
+    min-width: 70px
+}
+
+.rrui__input-field {
+    border: none !important
+}
+
+.rrui__select__button:focus, .rrui__select__native-expanded:focus + .rrui__select__button {
+    border-bottom-color: #03B2CB
+}
+
+.react-phone-number-input__country.rrui__select--collapsed {
+    margin-top: 4px
+}
+
+.react-phone-number-input__country.rrui__select--expanded {
+    height: 44px;
+}
+
 .rrui__input-field,
 .rrui__select__button {
     border: none;
