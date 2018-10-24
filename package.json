@@ -1,6 +1,6 @@
 {
   "name": "react-phone-number-input-mui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Telephone input for React and Material-UI. Fork of catamphetamine awesome work of react-phone-number-input.",
   "main": "index.commonjs.js",
   "module": "index.js",
