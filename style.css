@@ -1,5 +1,5 @@
 .react-phone-number-input__country-prefix {
-    font-family: Roboto, sans-serif;
+    font-family: inherit;
     position: absolute;
     left: 34px;
     bottom: 15px;
