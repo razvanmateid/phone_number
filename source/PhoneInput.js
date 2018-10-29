@@ -450,7 +450,7 @@ export default class PhoneNumberInput extends PureComponent
 		// Doing it after the `state` has been updated
 		// because `onChange()` will trigger `getDerivedStateFromProps()`
 		// with the new `value` which will be compared to `state.value` there.
-		() => onChange(value))
+		() => onChange(value, parsed_input))
 	}
 
 	// This `onBlur` interceptor is a workaround for `redux-form`
