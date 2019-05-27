@@ -51,8 +51,8 @@
     "npm-run-all": "^1.4.0",
     "nyc": "^10.3.2",
     "postcss": "^6.0.23",
-    "react": "^16.3.0",
-    "react-dom": "^16.3.0",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
     "rimraf": "^2.5.0",
     "webpack": "^4.2.0",
     "webpack-cli": "^3.1.2"

@@ -13,7 +13,7 @@ import TextField from '@material-ui/core/TextField';
 storiesOf("MUI Phone Component", module)
     .add("Basic", () => (
         <PhoneInput
-            onChange={_ => console.log('change')}
+            onChange={(e) => console.log('change', e)}
             inputComponent={TextField}
             displayInitialValueAsLocalNumber={true}
         />

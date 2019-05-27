@@ -398,6 +398,8 @@ export default class PhoneNumberInput extends PureComponent
 	// E.g.: `""`, `"+"`, `"+123"`, `"123"`.
 	onChange = (e, parsed_input) =>
 	{
+    e.persist();
+    parsed_input = e.target.value;
 		const
 		{
 			onChange,
@@ -515,11 +517,11 @@ export default class PhoneNumberInput extends PureComponent
 	}
 
 	// Can be called externally.
-	focus = () => this.number_input.focus()
+	focus = (e) => {
+    this.number_input.focus();
+  }
 
-	storeCountrySelectInstance = _ => this.country_select = _
-
-	storePhoneNumberInputInstance = _ => this.number_input = _
+	storeCountrySelectInstance = _ => this.country_select = React.createRef()
 
 	static getDerivedStateFromProps(props, state)
 	{
@@ -681,7 +683,7 @@ export default class PhoneNumberInput extends PureComponent
 					{ showCountrySelect &&
 						<CountrySelectComponent
 							{..._countrySelectProps}
-							ref={ this.storeCountrySelectInstance }
+							ref={ (input) => { this.country_select = input; } }
 							name={ name ? `${name}__country` : undefined }
 							value={ country }
 							options={ country_select_options }
@@ -706,7 +708,7 @@ export default class PhoneNumberInput extends PureComponent
 							type="tel"
 							name={ name }
 							{ ...phoneNumberInputProps }
-							ref={ this.storePhoneNumberInputInstance }
+							inputRef={ (input) => { this.number_input  = input }}
 							metadata={ metadata }
 							country={ country }
 							value={ parsed_input || '' }
