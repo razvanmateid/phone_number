@@ -397,7 +397,9 @@ export default class PhoneNumberInput extends PureComponent
 	// or an empty string.
 	// E.g.: `""`, `"+"`, `"+123"`, `"123"`.
 	onChange = (e, parsed_input) =>
+
 	{
+	const trueValue = e.target.value;
     e.persist();
     parsed_input = e.target.value;
 		const
@@ -451,8 +453,8 @@ export default class PhoneNumberInput extends PureComponent
 		// Update the new `value` property.
 		// Doing it after the `state` has been updated
 		// because `onChange()` will trigger `getDerivedStateFromProps()`
-		// with the new `value` which will be compared to `state.value` there.
-		() => onChange(value, parsed_input))
+		// with the new `value`, which will be compared to `state.value` there.
+		() => onChange(value, parsed_input, trueValue))
 	}
 
 	// This `onBlur` interceptor is a workaround for `redux-form`
