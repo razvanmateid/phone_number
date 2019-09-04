@@ -1,6 +1,6 @@
 {
-  "name": "react-phone-number-input-mui",
-  "version": "1.0.7",
+  "name": "@iwelcome/react-phone-number-input-mui",
+  "version": "1.2.6",
   "description": "Telephone input for React and Material-UI. Fork of catamphetamine awesome work of react-phone-number-input.",
   "main": "index.commonjs.js",
   "module": "index.js",
@@ -78,6 +78,10 @@
     "type": "git",
     "url": "git+https://github.com/badraganmircea/react-phone-number-input-mui.git"
   },
+  "publishConfig": {
+    "registry": "http://nexusa:8081/repository/tulip-npm-snapshots/",
+    "access": "restricted"
+  },
   "keywords": [
     "javascript",
     "react",
@@ -88,7 +92,7 @@
     "international",
     "iphone"
   ],
-  "author": "badraganmircea <badraganmircea@gmail.com>",
+  "author": "iwelcome",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/badraganmircea/react-phone-number-input-mui/issues"

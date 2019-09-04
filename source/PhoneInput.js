@@ -362,7 +362,7 @@ export default class PhoneNumberInput extends PureComponent
 			// Doing it after the `state` has been updated
 			// because `onChange()` will trigger `getDerivedStateFromProps()`
 			// with the new `value` which will be compared to `state.value` there.
-			onChange(new_value)
+			onChange(new_value, this.state.parsed_input);
 
 			// Focus the phone number `<input/>` upon country selection.
 			// Doing it in a `setState()` callback because the phone number
@@ -399,7 +399,6 @@ export default class PhoneNumberInput extends PureComponent
 	onChange = (e, parsed_input) =>
 
 	{
-	const trueValue = e.target.value;
     e.persist();
     parsed_input = e.target.value;
 		const
@@ -454,7 +453,7 @@ export default class PhoneNumberInput extends PureComponent
 		// Doing it after the `state` has been updated
 		// because `onChange()` will trigger `getDerivedStateFromProps()`
 		// with the new `value`, which will be compared to `state.value` there.
-		() => onChange(value, parsed_input, trueValue))
+		() => onChange(value, parsed_input))
 	}
 
 	// This `onBlur` interceptor is a workaround for `redux-form`
