@@ -400,7 +400,6 @@ export default class PhoneNumberInput extends PureComponent
 	{
 	const regexp = new RegExp(/[^+\-0-9]/g);
 	if (regexp.test(e.target.value)) {
-		console.log('IGNORING', e.target.value);
 		// ignore the input if the user has typed a letter
 		return;
 	}
