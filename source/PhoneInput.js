@@ -398,8 +398,9 @@ export default class PhoneNumberInput extends PureComponent
 	// E.g.: `""`, `"+"`, `"+123"`, `"123"`.
 	onChange = (e, parsed_input) =>
 	{
-	const regexp = new RegExp(/[a-zA-Z]+/g);
+	const regexp = new RegExp(/[^+\-0-9]/g);
 	if (regexp.test(e.target.value)) {
+		console.log('IGNORING', e.target.value);
 		// ignore the input if the user has typed a letter
 		return;
 	}
